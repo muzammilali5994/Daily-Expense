@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.upper-box{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+.expense-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+th,td{
+    padding-left: 40px;
+}

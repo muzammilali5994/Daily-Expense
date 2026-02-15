@@ -10,22 +10,26 @@
 <body>
 
     <!--Upper Box-->
-    <div class="container">
+    <div class="container upper-box mt-4">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mt-3 text-center">
                 <h2>Balanace </h2>
-                <span></span>
+                <p id="balance"></p>
             </div>
-            <div class="col-6">
-                <h3>Total Income</h3>
-            </div>
-            <div class="col-6">
-                <h3>Total  Expense</h3>
+            <div class="row expense-info mt-4 text-center">
+                <div class="col-6">
+                    <h3>Total Income</h3>
+                    <p class="totalIncome"></p>
+                </div>
+                <div class="col-6">
+                    <h3>Total  Expense</h3>
+                    <p  class="totalExpense"></p>
+                </div>
             </div>
         </div>
     </div>
     <!--Lower Box-->
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-8">
                 <table>
@@ -38,25 +42,27 @@
                             <th>Delete</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tableBody">
                         
                     </tbody>
                 </table>
             </div>
-            <div class="col-4">
+            <div class="col-4 ">
                 <H2>Add New Entry</H2>
-                <span>Expense Type</span>
-                <select name="category" id="category">
-                    <option value="Expense">Expense </option>
-                    <option value="Income">Income </option>
-                </select>
+                <div class="expense-type mt-4">
+                    <span>Expense Type</span>
+                    <select name="category" id="category">
+                        <option value="Expense">Expense </option>
+                        <option value="Income">Income </option>
+                    </select>
+                </div>
                 <div class="input-area">
                     <span>Name </span>
-                    <input type="text">
+                    <input type="text" id="name">
                     <span>Amount </span>
-                    <input type="number">
+                    <input type="number" id="number">
                 </div>
-                <button class="mt-2">Add Expense</button>
+                <button class="mt-2 btn btn-primary" id="addBtn">Add Expense</button>
             </div>
         </div>
     </div>
